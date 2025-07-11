@@ -51,9 +51,14 @@
     combos {
         compatible = "zmk,combos";
 
-        test {
-            bindings = <&kp LS(P)>;
+        del-combo {
+            bindings = <&kp LS(DEL)>;
             key-positions = <15 16>;
+        };
+
+        tab-combo {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
         };
     };
 
