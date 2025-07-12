@@ -51,19 +51,9 @@
     combos {
         compatible = "zmk,combos";
 
-        del-combo {
+        num-combo {
             bindings = <&tog 1>;
-            key-positions = <15 16>;
-        };
-
-        tab-combo {
-            bindings = <&kp DELETE>;
-            key-positions = <14 15>;
-        };
-
-        combo-click {
-            bindings = <&mkp LCLK>;
-            key-positions = <16 17>;
+            key-positions = <15 16 17>;
         };
 
         combo-escape {
@@ -71,13 +61,8 @@
             key-positions = <30 31>;
         };
 
-        combo-numpad {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <2 3>;
-        };
-
         combo-settings {
-            bindings = <&mo 6>;
+            bindings = <&mo 7>;
             key-positions = <43 46>;
         };
     };
@@ -282,10 +267,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&trans  &kp Q    &lt 5 W         &kp E             &kp R            &kp T                                   &kp UP                &kp Y      &kp U        &kp I             &kp O           &kp P              &trans
-&td0    &lt 2 A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &kp F            &kp G                         &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_WIN SEMI  &trans
+&trans  &kp Q    &lt 6 W         &kp E             &kp R            &kp T                                   &kp UP                &kp Y      &kp U        &kp I             &kp O           &kp P              &trans
+&td0    &lt 2 A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &lt 3 F          &kp G                         &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_WIN SEMI  &trans
 &trans  &kp Z    &kp X           &kp C             &kp V            &kp B            &kp SPACE              &kp DOWN              &kp N      &kp M        &kp COMMA         &kp DOT         &kp FSLH           &trans
-                                 &lt 9 TAB         &lt 4 BACKSLASH  &mt LCTRL ENTER                                               &kp SPACE  &mo 7        &kp RALT
+                                 &lt 10 TAB        &lt 5 BACKSLASH  &mt LCTRL ENTER                                               &kp SPACE  &mo 8        &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -304,8 +289,17 @@
             bindings = <
 &trans  &trans  &kp HOME        &kp UP_ARROW   &kp END          &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT_ARROW  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans         &trans           &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &kp BACKSPACE  &kp DELETE       &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                 &kp RS(LCTRL)  &kp LEFT_SHIFT   &kp LCTRL                                    &trans  &trans  &trans
+            >;
+        };
+
+        index-layer {
+            bindings = <
+&trans  &trans      &trans      &trans         &trans  &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp ESCAPE  &kp DELETE  &kp BACKSPACE  &trans  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans      &trans         &trans  &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans         &trans  &mkp LCLK                                    &trans  &trans  &trans
             >;
         };
 
