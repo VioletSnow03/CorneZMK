@@ -329,7 +329,7 @@
             display-name = "settings";
             bindings = <
 &trans  &kp N1           &kp N2          &kp N3                            &kp N4           &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7                            &kp N8                            &kp N9                            &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1                      &bt BT_SEL 2     &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &rgb_ug RGB_COLOR_HSB(46,100,50)  &rgb_ug RGB_COLOR_HSB(251,47,36)  &rgb_ug RGB_COLOR_HSB(177,38,30)  &kp HOME  &kp PG_UP
+&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1                      &bt BT_SEL 2     &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &rgb_ug RGB_COLOR_HSB(33,100,50)  &rgb_ug RGB_COLOR_HSB(251,47,36)  &rgb_ug RGB_COLOR_HSB(177,38,30)  &kp HOME  &kp PG_UP
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_COLOR_HSB(254,73,72)  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_EFF                   &rgb_ug RGB_BRI                   &rgb_ug RGB_BRD                   &kp END   &kp PG_DN
                                          &trans                            &trans           &trans                                                                          &kp INS          &kp DEL                           &trans
             >;
