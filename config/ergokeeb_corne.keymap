@@ -273,17 +273,17 @@
 
         left-num-layer {
             bindings = <
-&trans  &trans  &kp N7        &kp N8         &kp N9        &kp PERCENT                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0  &kp NUMBER_4  &kp N5         &kp NUMBER_6  &kp DOLLAR             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp HASH     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp BACKSPACE  &kp COMMA     &kp PERIOD                                     &trans  &trans  &trans
+&trans  &trans  &kp N7        &kp N8         &kp N9          &kp PERCENT                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0  &kp NUMBER_4  &kp N5         &lt 3 NUMBER_6  &kp N0                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3    &kp DOLLAR   &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp BACKSPACE  &kp COMMA       &kp PERIOD                                     &trans  &trans  &trans
             >;
         };
 
         arrow-layer {
             bindings = <
 &trans  &trans  &kp HOME        &kp UP_ARROW   &kp END          &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT_ARROW  &to 1                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT_ARROW  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &kp BACKSPACE  &kp DELETE       &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                 &kp RS(LCTRL)  &kp LEFT_SHIFT   &kp LCTRL                                    &trans  &trans  &trans
             >;
@@ -291,10 +291,10 @@
 
         index-layer {
             bindings = <
-&trans  &trans      &kp LEFT_ARROW  &kp TAB        &trans        &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp ESCAPE  &kp DELETE      &kp BACKSPACE  &trans        &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans          &trans         &trans        &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans         &kp LEFT_ALT  &mkp LCLK                                    &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp TAB        &trans        &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo 1   &kp DELETE      &kp BACKSPACE  &trans        &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans         &trans        &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans         &kp LEFT_ALT  &mkp LCLK                                    &trans  &trans  &trans
             >;
         };
 
