@@ -282,10 +282,10 @@
 
         arrow-layer {
             bindings = <
-&trans  &trans  &kp HOME        &kp UP_ARROW   &kp END          &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT_ARROW  &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &kp BACKSPACE  &kp DELETE       &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                &kp RS(LCTRL)  &kp LEFT_SHIFT   &kp LCTRL                                    &trans  &trans  &trans
+&trans  &trans  &kp HOME        &kp UP_ARROW   &kp END          &kp PAGE_UP                      &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT_ARROW  &kp PAGE_DOWN            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &kp BACKSPACE  &kp DELETE       &trans         &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                &kp RS(LCTRL)  &kp LEFT_SHIFT   &kp LCTRL                                        &trans  &trans  &trans
             >;
         };
 
@@ -293,14 +293,14 @@
             bindings = <
 &trans  &trans  &kp LEFT_ARROW  &kp TAB        &trans        &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &mo 1   &kp DELETE      &kp BACKSPACE  &trans        &trans               &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &kp ESCAPE     &trans        &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp ESCAPE      &kp ESCAPE     &trans        &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans         &kp LEFT_ALT  &mkp LCLK                                    &trans  &trans  &trans
             >;
         };
 
         coding-layer {
             bindings = <
-&trans  &kp PIPE          &kp GRAVE          &kp HASH              &trans                 &trans                       &trans          &kp PERCENT  &kp NUMBER_7  &kp N8          &kp N9        &trans  &trans
+&trans  &kp PIPE          &kp GRAVE          &kp HASH              &kp CAPS               &trans                       &trans          &kp PERCENT  &kp NUMBER_7  &kp N8          &kp N9        &trans  &trans
 &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans               &trans  &trans  &trans  &kp DOLLAR   &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp N0  &trans
 &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL  &trans            &trans          &kp HASH     &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &trans  &trans
                                              &trans                &trans                 &trans                                       &kp PERIOD   &kp COMMA     &kp LEFT_SHIFT
@@ -310,7 +310,7 @@
         primary-symbols-layer {
             bindings = <
 &trans  &kp PSCRN   &detach_instance  &kp LA(NUMBER_2)   &kp Y              &kp LA(NUMBER_1)                     &trans          &kp AT_SIGN    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp DOLLAR    &kp PERCENT     &trans
-&trans  &kp LA(N9)  &kp LA(N8)        &component_search  &actions_shortcut  &kp LC(BACKSLASH)            &trans  &trans  &trans  &kp AMPERSAND  &kp QUESTION       &kp EXCLAMATION   &kp MINUS     &kp UNDERSCORE  &trans
+&trans  &kp LA(N8)  &kp LA(N9)        &component_search  &actions_shortcut  &kp LC(BACKSLASH)            &trans  &trans  &trans  &kp AMPERSAND  &kp QUESTION       &kp EXCLAMATION   &kp MINUS     &kp UNDERSCORE  &trans
 &trans  &uncomment  &comment          &copy_properties   &paste_to_replace  &ungroup           &trans            &trans          &kp EQUAL      &kp PLUS           &kp MINUS         &kp ASTERISK  &kp CARET       &trans
                                       &trans             &trans             &trans                                               &trans         &trans             &trans
             >;
@@ -363,10 +363,10 @@
 
         function_layer {
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans   &trans   &trans                                    &trans  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans   &trans   &trans                                       &trans  &trans  &trans
             >;
         };
     };
