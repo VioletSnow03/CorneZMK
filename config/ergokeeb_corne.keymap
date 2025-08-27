@@ -265,7 +265,7 @@
 &trans  &kp Q    &lt 6 W         &kp E             &kp R            &kp T                                   &kp UP                &kp Y      &kp U        &kp I             &kp O           &kp P              &trans
 &td0    &lt 2 A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &lt 3 F          &lt 1 G                       &kp LEFT  &kp ENTER  &kp RIGHT  &kp H      &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_WIN SEMI  &trans
 &trans  &lt 1 Z  &kp X           &kp C             &kp V            &kp B            &kp SPACE              &kp DOWN              &kp N      &kp M        &kp COMMA         &kp DOT         &kp FSLH           &trans
-                                 &lt 10 TAB        &lt 5 BACKSLASH  &mt LCTRL ENTER                                               &kp SPACE  &mo 4        &kp RALT
+                                 &lt 8 TAB         &lt 5 BACKSLASH  &mt LCTRL ENTER                                               &kp SPACE  &mo 4        &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -276,7 +276,7 @@
 &trans  &trans  &kp N7        &kp N8         &kp N9          &kp PERCENT                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N0  &kp NUMBER_4  &kp N5         &lt 3 NUMBER_6  &kp N0                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3    &kp DOLLAR   &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                              &kp BACKSPACE  &kp COMMA       &kp PERIOD                                     &trans  &trans  &trans
+                              &kp BACKSPACE  &kp PERIOD      &kp COMMA                                      &trans  &trans  &trans
             >;
         };
 
@@ -285,7 +285,7 @@
 &trans  &trans  &kp HOME        &kp UP_ARROW   &kp END          &kp PAGE_UP                      &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LEFT_ARROW  &kp DOWN       &kp RIGHT_ARROW  &kp PAGE_DOWN            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &kp BACKSPACE  &kp DELETE       &trans         &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                &kp RS(LCTRL)  &kp LEFT_SHIFT   &kp LCTRL                                        &trans  &trans  &trans
+                                &kp LEFT_ALT   &kp LEFT_SHIFT   &kp LCTRL                                        &trans  &trans  &trans
             >;
         };
 
@@ -300,10 +300,10 @@
 
         coding-layer {
             bindings = <
-&trans  &kp PIPE          &kp GRAVE          &kp HASH              &kp CAPS               &trans                       &trans          &kp PERCENT  &kp NUMBER_7  &kp N8          &kp N9        &trans  &trans
-&trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans               &trans  &trans  &trans  &kp DOLLAR   &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp N0  &trans
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL  &trans            &trans          &kp HASH     &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &trans  &trans
-                                             &trans                &trans                 &trans                                       &kp PERIOD   &kp COMMA     &kp LEFT_SHIFT
+&trans  &kp PIPE          &kp GRAVE          &kp HASH              &kp CAPS               &trans                       &trans          &kp PERCENT    &kp NUMBER_7  &kp N8          &kp N9        &kp PERIOD  &trans
+&trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans               &trans  &trans  &trans  &kp BACKSPACE  &kp NUMBER_4  &kp N5          &kp NUMBER_6  &kp N0      &trans
+&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL  &trans            &trans          &kp DOLLAR     &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3  &kp SLASH   &trans
+                                             &trans                &trans                 &trans                                       &kp PERIOD     &trans        &kp LEFT_SHIFT
             >;
         };
 
@@ -337,6 +337,15 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
+        function_layer {
+            bindings = <
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans   &trans   &trans                                       &trans  &trans  &trans
+            >;
+        };
+
         layer_3 {
             display-name = "Fn";
             bindings = <
@@ -359,15 +368,6 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
-        };
-
-        function_layer {
-            bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans                       &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans     &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans   &trans   &trans                                       &trans  &trans  &trans
-            >;
         };
     };
 
