@@ -51,8 +51,8 @@
     combos {
         compatible = "zmk,combos";
 
-        num-combo {
-            bindings = <&tog 1>;
+        sleep {
+            bindings = <&kp C_SLEEP>;
             key-positions = <15 16 17>;
         };
 
